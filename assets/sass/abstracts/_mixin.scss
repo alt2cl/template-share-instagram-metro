@@ -1,0 +1,32 @@
+@mixin border-radius($top-left:10px,$top-right:null,$bottom-right:null,$bottom-left:null){
+    -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left!important;
+    -moz-border-radius: $top-left $top-right $bottom-right $bottom-left!important;
+    -ms-border-radius: $top-left $top-right $bottom-right $bottom-left!important;
+    -o-border-radius: $top-left $top-right $bottom-right $bottom-left!important;
+        border-radius: $top-left $top-right $bottom-right $bottom-left!important;
+}
+
+@mixin img-object-fit($objectFit-width:100%, $objectFit-height:200px,$object-fit:cover,$objectFit-position:0){
+    width: $objectFit-width;
+    height: $objectFit-height;
+    object-fit: $object-fit;
+    object-position: $objectFit-position;
+}
+
+@mixin img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+@mixin tablet-view{
+    @media (min-width:#{$min-tablet}){
+        @content;
+    }
+}
+
+@mixin view-up{
+    @media (max-width:#{$min-1080}){
+        @content;
+    }
+}
+

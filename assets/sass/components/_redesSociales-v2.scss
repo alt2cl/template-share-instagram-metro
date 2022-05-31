@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'LibeSansRond-Bold';
+    src:  url('./../../fonts/LibeSansRond-Bold.woff') format('woff'),
+          url('./../../fonts/LibeSansRond-Bold.ttf') format('ttf');
+  }
+
+
+.redesSociales{
+    width: $widthRedesSociales;
+    height: $heightRedesSociales;
+    background: $bg-naranja-palido;
+    position: relative;
+    font-size: 0;
+    background-image: url('../img/thestregisbahiab-5dd554d15e6c754c126f00899cef23ff.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  
+
+    &__icon{
+        width: 5%;
+        height: auto;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 999;
+        opacity: 0.8;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__info{
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+        left: 0;
+        font-size: 1rem;
+        z-index: 1000;
+        color: $font-color-white;
+        p{
+           padding-left: 3rem;
+           padding-right: 3rem;
+           font-size:1.8rem;
+           line-height: 140%;
+           letter-spacing: 1px;
+           font-weight: 400;
+        }
+
+        .brand-content {
+            display: inline-block;
+            padding: 0 2rem;
+            &::before {
+                content: "";
+                height: 0.8rem;
+                background-color: #ffffff;
+                border-radius: 5px;
+                display: block;
+                margin-bottom: 1rem;
+                margin-left: -2rem;
+                width: calc(100% + 4rem);
+            }
+        }
+
+    }
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 600px;
+            top: 0;
+            z-index:1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &__titulo{
+            
+            font-family: 'LibeSansRond-Bold', sans-serif;
+            margin: 0;
+            text-shadow: 1px 5px 10px rgb(0 0 0);
+            font-size:5.8rem;
+            margin-bottom: 1.6rem;
+
+            
+        }
+
+        &.redesSociales-v2-center {
+            text-align: center;
+        }
+
+}
+
+.text-center {
+    text-align: center;
+}
+.content{
+    display: block;
+    margin: 1.5rem 0 0 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 4rem 4rem 6rem;
+    width: 100%;
+    
+    background:rgba(0,0,0,0.7);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+19,000000+100&1+19,0+100 */
+    background: -moz-linear-gradient(bottom,  rgb(0 0 0 / 81%) 48%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom,  rgb(0 0 0 / 81%) 48%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top,  rgb(0 0 0 / 81%) 48%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+    img{
+        width: auto;
+        height: auto;
+        max-height: 3rem;
+
+        &:before {
+            content:"";
+            height: 1rem;
+            width: 5rem;
+            background-color: aliceblue;
+        }
+    }
+}
+
+.green_text {
+    color: #2EB428;
+    background: none;
+}
