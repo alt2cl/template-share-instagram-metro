@@ -118,7 +118,27 @@
     }
 }
 
-.green_text {
+.green_text, .publimetro_text, .metro_text {
     color: #2EB428;
+    background: none;
+}
+
+.elcalce_text {
+    color: #F73520;
+    background: none;
+}
+
+.nuevamujer_text, .novamulher_text {
+    color: #4abfbf;
+    background: none;
+}
+
+.sabrosia_text {
+    color: #C66441;
+    background: none;
+}
+
+.comutricolor_text {
+    color: #d82532;
     background: none;
 }
