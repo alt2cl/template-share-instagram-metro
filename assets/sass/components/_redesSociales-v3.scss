@@ -118,7 +118,7 @@
     }
 }
 
-.green_text, .publimetro_text, .metro_text {
+.green_text, .publimetro_text, .metro_text, .metrojornal_text, .metroworldnews_text {
     color: #2EB428;
     background: none;
 }
@@ -140,5 +140,15 @@
 
 .comutricolor_text {
     color: #d82532;
+    background: none;
+}
+
+.activo_text {
+    color: #955bb8;
+    background: none;
+}
+
+.fayerwayer_text {
+    color: #ff3200;
     background: none;
 }
